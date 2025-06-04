@@ -10,7 +10,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
     scroll-behavior: smooth;
 }
 
@@ -245,7 +247,7 @@ section{
     display: flex;
 }
 .modal-content{
-    background-color: #ffffff;
+    background-color:#c0c0c0;
     padding: 30px;
     border-radius: 10px;
     max-width: 400px;
@@ -351,6 +353,12 @@ section{
     }
     section{
         scroll-margin-top: 200px;
+    }
+    .modal{
+        margin-top: 100px;
+    }
+    .modal-content{
+        max-height: 60vh;
     }
 
    
