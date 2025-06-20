@@ -10,19 +10,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     scroll-behavior: smooth;
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 .container{
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+    
 }
 
 body{
-    background-color:#818181 ;
+    background-color:#818181 ;   
 }
+
+ 
+
 
 header{
     background-color:#373737;
@@ -166,16 +173,18 @@ section{
     text-align: center;
     padding: 50px 0;
 }
-
 #personagens .item{
-   border: 1px solid #c0c0c0  ;
-   background-color: #555555  ;
-   border-radius: 10px; 
-   padding: 20px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   transition:transform 0.2s ease, box-shadow 0.2s ease;
-   cursor: pointer;
-
+    border: 1px solid #c0c0c0  ;
+    background-color: #555555  ;
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
 }
 #personagens .item:hover{
     transform: translatex(-5px);
@@ -185,7 +194,6 @@ section{
     transform: scale(0.98);
     box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.15);
 }
-
 #personagens h1{
     font-size: 1;
     line-height: 1.8;
@@ -244,13 +252,15 @@ section{
     text-decoration: none;
     border-radius: 6px;
     cursor: pointer;
+    margin:auto;
+   align-self: flex-start;
 }
 
 .modal:target{
     display: flex;
 }
 .modal-content{
-    max-height: 90vh;
+    max-height: 80vh;
     overflow-y: auto;
     background-color: #ffffff;
     padding: 30px;
@@ -269,17 +279,52 @@ section{
     border-radius: 6px;
     text-decoration: none;
 }
-.galeriaimg{
-    display: flex;
-    flex: 1;
-    
-    margin: 15px;
-   
+
+
+.imagens h1{
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px
 }
-.galimg1{
-    display: flex;
-    flex: 1;
-    gap: 5px;
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px ;
+    max-width: 1000px;
+    margin:auto;
+    padding: 20px;
+}
+.galeriaimg{
+    width: 100%;
+    /* height: 5%; */
+    border-radius: 10px  black;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* margin: 2%; */
+    transition: transform 0.3s ease; 
+}
+.galeriaimg:hover{      
+    transform: scale(1.05);
+}
+.galeriaimg img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.descricao-galeria {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+ .imagens .fonte{
+    text-align: center;
+    color: white;
+    font-size: 0.8em ;
 }
 
 #curiosidades{
@@ -289,7 +334,7 @@ section{
     
 }
 
-.curiosidade-container{
+/* .curiosidade-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -325,15 +370,23 @@ section{
     color: #ffffff;
     text-decoration: none;
     font-size: 0.8em;
-}
+} */
 
+#contato{
+    text-align: center;
+    margin-bottom: 5px;
+}
 .fonte{
     font-size: 0.8em ;
+    
+}
+footer{
+    text-align: center;
 }
 
 
 
-@media(max-width:575px){
+@media(max-width:675px){
     header .container, .sobre-container{
         flex-direction: column;
         text-align: center;
@@ -354,7 +407,35 @@ section{
         margin-top: 100px;
     }
     .modal-content{
+        width: 90%;
         max-height: 60vh;
+        overflow-y: auto;
+        background-color: whitesmoke;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        font-size: 0.9em; /*fonte levemente menor */
+     
+    }
+    .galeria{
+        flex-direction: column;
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .galeriaimg{
+        flex-direction: column;
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 100%;
+    }
+    
+    .footer{
+        font-size: 0.9em;
+        margin: 10px;
     }
 
    
