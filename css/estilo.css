@@ -28,9 +28,6 @@ body{
     background-color:#818181 ;   
 }
 
- 
-
-
 header{
     background-color:#373737;
     color:#ffffff;
@@ -81,13 +78,25 @@ nav ul li a {
     text-align: left;
     text-shadow: 4px 2px  black;
 }
+.bannercontato{
+    background: url(../img/banner89.jpg) no-repeat center/cover;
+    height: 500px; 
+    display: flex;
+    margin-top: 106px;
+    align-items: center; 
+    /* justify-content: center; */
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: left; 
+    text-shadow: 4px 2px  black;
+}
 section{
     scroll-margin-top: 200px;
 }
 .bannertexto{
-    margin-left: 8%;
-
+    margin-left: 8%
 }
+
 
 #sobre{
     padding: 35px;
