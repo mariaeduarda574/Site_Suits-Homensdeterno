@@ -44,10 +44,20 @@ header .container{
     align-items: center;
     flex-wrap: wrap;
 }
+.logo a{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    max-width: 5px;
 
+}
 .logo{
     font-size: 2em;
     font-weight:bold ;
+    width: 25%;
+    border-radius: 100%;
+  
 }
 
 nav ul{
@@ -223,6 +233,46 @@ section{
     margin-bottom: 10px;
     
 }
+.centralizar{
+    text-align: center;
+}
+
+.formulario-contato {
+    background-color: #a1a1a1;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 35px;
+    color: #000000;
+  }
+  .grupoforms{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  .grupoforms input,
+  .grupoforms select,
+  .grupoforms textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 8px;
+  }
+  .grupoforms input[type="checkbox"],
+  .grupoforms input[type="radio"] {
+    margin-right: 8px;
+    margin-top: 0;
+  }
+  
+  .grupoforms label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
 
 /*Modal*/
 .modal{
